@@ -14,12 +14,13 @@ with open("README.md", "r",encoding="utf-8") as f:
     
     
     setuptools.setup(
-        name=SRC_REPO,version=__version__,
+        name=SRC_REPO,
+        version=__version__,
         autor=AUTHOR_USER_NAME,
         author_email=AUTHOR_EMAIL,
         description="A smallpython package for NLP app",
         Long_description=long_description ,
-        long_description_content="text/markdown",
+        Long_description_content="text/markdown",
         url=f"https//github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
         project_urls=
         {
@@ -27,7 +28,7 @@ with open("README.md", "r",encoding="utf-8") as f:
             
        },
         package_dir={"": "src"},
-        packages=setuptools.find_packages(where='src')
+        packages=setuptools.find_packages(where='src'),
         
         
     )
